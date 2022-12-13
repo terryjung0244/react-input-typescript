@@ -1,15 +1,8 @@
-.input-main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: black;
-}
-
 .input-container {
   width: 500px;
   height: 80px;
   font-size: 22px;
   text-align: center;
   border-radius: 15px;
+  margin: 20px;
 }

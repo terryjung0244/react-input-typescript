@@ -10,17 +10,15 @@ const Input = ({
 }: InputComponentPropsType) => {
   return (
     <div>
-      <div className="input-main-container">
-        <input
-          className="input-container"
-          name={name}
-          value={value}
-          onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-            onChangeFunc({ name: e.target.name, value: e.target.value })
-          }
-          placeholder={placeholder}
-        />
-      </div>
+      <input
+        className="input-container"
+        name={name}
+        value={value}
+        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
+          onChangeFunc({ name: e.target.name, value: e.target.value })
+        }
+        placeholder={placeholder}
+      />
     </div>
   );
 };

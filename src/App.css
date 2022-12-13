@@ -1,4 +1,8 @@
-.input-container {
-  width: 500px;
-  height: 50px;
+.input-main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
 }

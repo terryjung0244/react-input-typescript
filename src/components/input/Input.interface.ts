@@ -1,5 +1,6 @@
 export interface InputStateType {
-  input: string;
+  inputName: string;
+  inputAge: string;
 }
 
 export interface InputComponentPropsType {

@@ -9,10 +9,12 @@ import {
 const App = () => {
   const [input, setInput] = useState<InputStateType>({
     //Set type of useState
-    input: "",
+    inputName: "",
+    inputAge: "",
   });
   const onChangeFunc = (data: OnChangeFuncDataType) => {
-    console.log(data);
+    console.log(data.name);
+    console.log(data.value);
     setInput({
       ...input,
       [data.name]: data.value,
@@ -22,12 +24,20 @@ const App = () => {
 
   return (
     <div>
-      <Input
-        name={"input"}
-        value={input["input"]}
-        onChangeFunc={onChangeFunc}
-        placeholder={"How much do you have in your account?"}
-      />
+      <div className="input-main-container">
+        <Input
+          name={"inputName"}
+          value={input["inputName"]}
+          onChangeFunc={onChangeFunc}
+          placeholder={"Tell me your name"}
+        />
+        <Input
+          name={"inputAge"}
+          value={input["inputAge"]}
+          onChangeFunc={onChangeFunc}
+          placeholder={"Tell me your age"}
+        />
+      </div>
     </div>
   );
 };
